@@ -14,3 +14,15 @@ btn.addEventListener('click', function () {
         }
     })
 })
+
+
+let btn2 = document.querySelector(".search-id");
+btn2.addEventListener("click", function(){
+    axios.get("users.json").then(function(response){
+        let data = response.data
+        let data1 = data.users
+        let search = document.querySelector(".input").value
+        
+
+    })
+})
